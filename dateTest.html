@@ -1,0 +1,11 @@
+<script>
+	
+	var dateString = "2021-01-22 14:00:26";
+	var date1 = dateString.replace(/s/,'T');
+	alert( "#1="+date1+"("+(typeof date1)+")" );
+	var date2 = Date.parse( date1 );
+	alert( "#2="+date2+"("+(typeof date2)+")" );
+	var date3 = new Date( date2 );
+	alert( "#3="+date3+"("+(typeof date3)+")" );
+	
+</script>
